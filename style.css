@@ -10,7 +10,20 @@ header {
   
 }
 body {
+  background-color: black;
   background-image: url('back.gif');
+}
+.form input {
+    width: calc(100% - 164px);
+    height: 50px;
+    left: 0;
+    color: #FFF;
+    padding: 0px 5px;
+    font-family: "Roboto";
+    background: none;
+    font-size: 14px;
+    border-radius: 2px;
+    border: solid 1px rgb(255, 255, 255, .2);
 }
 
 .button {
@@ -18,6 +31,22 @@ body {
 	font-family: "Poppins";
 	font-weight: 600;
   border: none;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 0px 0px;
+  cursor: pointer;
+  
+}
+
+.gobutton {
+  	color: white;
+	font-family: "Poppins";
+	font-weight: 600;
+  border: none;
+  background-color: gray;
   padding: 20px 20px;
   text-align: center;
   text-decoration: none;
