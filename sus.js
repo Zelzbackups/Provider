@@ -3,7 +3,7 @@ var input = document.querySelector('#url');
 input.addEventListener('keyup', (key) => {
     if (key.keyCode == 13) { 
         if (!input.value.trim().length) return;
-        window.location.assign(`https://pooster.loololol.wtf/prox/?url=${btoa(input.value)}`);
+        window.location.assign(`https://pooster.loololol.wtf/service/gateway/?url=${(input.value)}`);
     }
 });
 
@@ -11,6 +11,6 @@ input.addEventListener('keyup', (key) => {
 document.querySelector("#initiate").addEventListener('click', () => {
 
     if (!input.value.trim().length) return;
-    window.location.assign(`https://pooster.loololol.wtf/prox/?url=${btoa(input.value)}`);
+    window.location.assign(`https://pooster.loololol.wtf/service/gateway/?url=${(input.value)}`);
 
 });
