@@ -5,9 +5,20 @@ header {
 
   align-items: center;
   background: #878787;
-    position: top;
+
+    position:fixed;
+       top:0;
+       left:0;
+
   width: 100%
   
+}
+
+.navbar {
+
+      position:top;
+       top:0;
+       left:0;
 }
 body {
   background-color: black;
@@ -15,7 +26,7 @@ body {
 }
 .selector
 {
-  position: absolute;
+  position: fixed;
   z-index:99;
   top: -30;
   left: 0;
@@ -23,6 +34,7 @@ body {
 }
 
 .form input {
+  
     width: calc(100% - 164px);
     height: 50px;
     left: 0;
@@ -32,6 +44,9 @@ body {
     background: none;
     font-size: 14px;
     border-radius: 2px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 1px rgb(255, 255, 255, .2);
 }
 
@@ -54,9 +69,10 @@ body {
   	color: white;
 	font-family: "Poppins";
 	font-weight: 600;
-  border: none;
-  background-color: gray;
-  padding: 20px 20px;
+  border: solid 1px rgb(255, 255, 255, .2);
+  background-color: transparent;
+  padding: 2.6px 10px;
+  
   text-align: center;
   text-decoration: none;
   display: inline-block;
