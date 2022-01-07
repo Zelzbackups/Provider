@@ -9,6 +9,7 @@ document.getElementsByClassName("navbar")[0].innerHTML = `
       <a href="/chatroom" class="button">Chatroom</a>
 
        <script src="/scripts/image.js"></script>
+      <script src="/scripts/name.js"></script>
       `;
 
     
