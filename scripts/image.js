@@ -18,4 +18,4 @@ function preloadImages(array) {
     }
 }
 
-preloadImages(["/images/back.gif", "/images/bean.jpeg", "/images/bitlife.png" "/images/cookie.jpeg", "/images/drift.jpg", "/images/fnaf1.jpeg", "/images/fnaf2.png", "fnaf3.jpeg", "fnaf4.jpeg", "/images/fnf.jpg", "/images/pandemic.jpeg", "/images/pico.png", "/images/slope.jpeg", "/images/space.png"]);
+preloadImages(["/images/back.gif", "/images/bean.jpeg", "/images/bitlife.png" "/images/cookie.jpeg", "/images/drift.jpg", "/images/fnaf1.jpeg", "/images/fnaf2.png", "fnaf3.jpeg", "fnaf4.jpeg", "/images/fnf.jpg", "/images/pandemic.jpeg", "/images/pico.png", "/images/slope.jpeg", "/images/space.png", "/images/discord.jpg", "/images/reddit.jpeg"]);

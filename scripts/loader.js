@@ -7,9 +7,10 @@ document.getElementsByClassName("navbar")[0].innerHTML = `
       <a href="/more" class="button">Games</a>
       <a href="/help" class="button">Help</a>
       <a href="/chatroom" class="button">Chatroom</a>
-
+<a href="/ub" class="button">Unblocked Websites</a>
        <script src="/scripts/image.js"></script>
       <script src="/scripts/name.js"></script>
+      
       `;
 
     
