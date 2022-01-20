@@ -14,4 +14,6 @@ document.querySelector("#initiate").addEventListener('click', () => {
     window.location.assign(`https://2.wcpss.technology/prefix/gateway/?url=${(input.value)}`);
 
 
+
+//yes
 });
