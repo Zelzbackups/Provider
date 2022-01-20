@@ -29,6 +29,8 @@ h1 {
   
 }
 a {
+  font-weight: 600;
+  font-size: 100;
   text-decoration: none;
   color: white;
   
