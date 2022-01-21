@@ -45,6 +45,13 @@
 
 <link href="assets/css/style.css" rel="stylesheet"></head>
 <body>
+    <script>
+    if ( window.location !== window.parent.location ) {
+  // The page is in an iframe
+} else {
+ window.location.replace("/more");
+}
+</script>
 <div class="page-content">
     <main role="main" class="u-main">
     </main>
