@@ -12,6 +12,7 @@ document.getElementsByClassName("navbar")[0].innerHTML = `
 
 
       `;
+      
 
 //do stuff with the script
 $("#tsparticles")
