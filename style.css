@@ -14,6 +14,13 @@ header {
   
 }
 
+#tsparticles {
+  position: absolute;
+  z-index:-10;
+
+}
+
+
 #initiate {
 text-align: center;
 }
@@ -69,8 +76,8 @@ a {
 }
 
 body {
-  background-color: black;
-  background-image: url('back.gif');
+  background-color: transparent;
+
 }
 .selector
 {
