@@ -1,25 +1,84 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="EN">
+
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>WCPSS</title>
-<style type="text/css">
-html {overflow: auto;}
-html, body, div, iframe {margin: 0px; padding: 0px; height: 100%; border: none;}
-iframe {display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;}
-</style>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />    
+    <link rel="stylesheet" href="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/css/app.css" type="text/css" />    
+    <title>Basketball Legends</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 </head>
+
 <body>
-    <script>
-    if ( window.location !== window.parent.location ) {
-  // The page is in an iframe
-} else {
- window.location.replace("/more");
-}
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+    <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/nape.min.js">
+        var nape ="nape.min.js";
+    </script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/easeljs-0.8.2.combined.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/bluebird.min.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/phaser.min.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/phaser-cachebuster.min.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/phaser-super-storage.min.js"></script>
+    <script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/assets/lib/dragonBones.min.js"></script>
+
+    <script type="text/javascript">
+        var useEvents = (typeof(Event) ==='function');
+
+        var myDispatchEvent = function (name){
+            var event;
+            if (useEvents){
+                event =  new Event(name);
+            }else{
+                event = document.createEvent('Event');
+                event.initEvent(name, true, true);
+            }
+            document.getElementById("content").dispatchEvent(event);
+        }
+
+        window["GD_OPTIONS"] = {
+            "gameId": "3dbd133d0cd9468bafdf2c9812290f4b",
+            "onEvent": function(event) {
+                switch (event.name) {
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        myDispatchEvent('SDK_GAME_START');
+                        break;
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        myDispatchEvent('SDK_GAME_PAUSE');
+                        // document.getElementById("content").dispatchEvent(new Event("SDK_GAME_PAUSE"));
+                        break;
+                    case "SDK_GDPR_TRACKING":
+                        // this event is triggered when your user doesn't want to be tracked
+                        console.log("SDK_GDPR_TRACKING");
+                        break;
+                    case "SDK_GDPR_TARGETING":
+                        // this event is triggered when your user doesn't want personalised targeting of ads and such
+                        console.log("SDK_GDPR_TARGETING");
+                        break;
+                    case "SDK_READY":
+                        // this event is triggered when your user doesn't want personalised targeting of ads and such
+                        console.log("SDK_READY");
+                        break;
+                }
+            },
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src ='https://sites.google.com/site/63245sd363463/main.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'gamedistribution-jssdk'));
 </script>
-<iframe id="tree" name="tree" src="https://html5.gamedistribution.com/rvvASMiM/3dbd133d0cd9468bafdf2c9812290f4b/?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5iYXNrZXRiYWxsbGVnZW5kcy5mdW4vIiwicGFyZW50RG9tYWluIjoiYmFza2V0YmFsbGxlZ2VuZHMuZnVuIiwidG9wRG9tYWluIjoiYmFza2V0YmFsbGxlZ2VuZHMuZnVuIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuNCJ9" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe>
-</body>
+
+<script type="text/javascript" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/basketballlegendnew/basketball-legends-2020.min.js"></script></body>
+
 </html>
-
-
-
