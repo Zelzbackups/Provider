@@ -8,6 +8,7 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
        <script src="/scripts/image.js"></script>
       <script src="/scripts/name.js"></script>
         <div id="tsparticles"> </div>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
 
       `;
