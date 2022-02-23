@@ -7,7 +7,7 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
       <a href="/help" class="button">Help</a>
        <script src="/scripts/image.js"></script>
       <script src="/scripts/name.js"></script>
-        <div id="tsparticles"> </div>
+       
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
 
@@ -24,7 +24,7 @@ $("#tsparticles")
           value: "#0d47a1",
         },
       },
-      fpsLimit: 15,
+      fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
