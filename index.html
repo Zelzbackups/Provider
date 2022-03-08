@@ -34,7 +34,22 @@
       <script src="/scripts/loader.js"></script>
 <br>
 <div class="beta"></div>
+<script>
+  $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+   if (JSON.stringify(data, null, 2) = "{
+  "ip": "71.65.141.7"
+}") {
+    console.log("Hello")
+  }
+});
 
+  if (JSON.stringify(data, null, 2) = "{
+  "ip": "71.65.141.7"
+}") {
+    console.log("Hello")
+  }
+  
+</script>
 <script type="text/javascript">
   $(document).ready(function() {
     if (window.location.href.indexOf("beta") > -1) {
