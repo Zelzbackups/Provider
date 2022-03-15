@@ -2,7 +2,6 @@
 
 document.getElementsByClassName("navbar")[0].innerHTML += `
       <a href="/" class="button">Home</a>
-      <a href="/m" class="button">Ρroxy</a>
       <a href="/more" class="button">Games</a>
       <a href="/help" class="button">Help</a>
        <script src="/scripts/image.js"></script>
