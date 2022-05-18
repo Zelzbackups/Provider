@@ -7,8 +7,7 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
       <a href="/help" class="button">CREATED BY ANDREW BAYNARD</a>
        <script src="/scripts/image.js"></script>
       <script src="/scripts/name.js"></script>
-       
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
 
       `;
