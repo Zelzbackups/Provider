@@ -1,0 +1,21 @@
+.gameButtons {
+    position: fixed;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.buttonImage {
+    margin-top: 12px;
+}
+
+#housesButton {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#tradeButton {
+    opacity: 0.5;
+    pointer-events: none;
+}

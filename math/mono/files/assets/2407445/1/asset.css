@@ -1,0 +1,66 @@
+.colour {   
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+}
+
+.colours {
+    float: left;
+    display: inline-block;
+}
+
+.tokens {
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.token {   
+    float: left;
+    width: 65px;
+    height: 65px;
+    padding: 5px 5px;
+    margin: 4px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 100%;
+}
+
+.selectable:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+#playerNumBox {
+    display: none;
+}
+
+.number {
+    display: initial;
+    margin: 12px 15px 12px 15px;
+    width: 70px;
+    height: 60px;
+    font-size: 1.2em;
+}
+
+.money {
+    display: none;
+}
+
+#player1setup {
+    display: none;
+}
+
+#player2setup {
+    display: none;
+}
+
+#player3setup {
+    display: none;
+}
+
+#player4setup {
+    display: none;
+}

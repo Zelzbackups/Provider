@@ -1,0 +1,155 @@
+.chanceCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -341px;
+    margin-top: -219px;
+}
+
+.communityChestCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -341px;
+    margin-top: -219px;
+}
+
+#communityChestCards {
+    height 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#chanceCards {
+    height 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#comChest1 {
+    display: none;
+}
+
+#comChest2 {
+    display: none;
+}
+
+#comChest3 {
+    display: none;
+}
+
+#comChest4 {
+    display: none;
+}
+
+#comChest5 {
+    display: none;
+}
+
+#comChest6 {
+    display: none;
+}
+
+#comChest7 {
+    display: none;
+}
+
+#comChest8 {
+    display: none;
+}
+
+#comChest9 {
+    display: none;
+}
+
+#comChest10 {
+    display: none;
+}
+
+#comChest11 {
+    display: none;
+}
+
+#comChest12 {
+    display: none;
+}
+
+#comChest13 {
+    display: none;
+}
+
+#comChest14 {
+    display: none;
+}
+
+#comChest15 {
+    display: none;
+}
+
+#comChest16 {
+    display: none;
+}
+
+#chanceCard1 {
+    display: none;
+}
+
+#chanceCard2 {
+    display: none;
+}
+
+#chanceCard3 {
+    display: none;
+}
+
+#chanceCard4 {
+    display: none;
+}
+
+#chanceCard5 {
+    display: none;
+}
+
+#chanceCard6 {
+    display: none;
+}
+
+#chanceCard7 {
+    display: none;
+}
+
+#chanceCard8 {
+    display: none;
+}
+
+#chanceCard9 {
+    display: none;
+}
+
+#chanceCard10 {
+    display: none;
+}
+
+#chanceCard11 {
+    display: none;
+}
+
+#chanceCard12 {
+    display: none;
+}
+
+#chanceCard13 {
+    display: none;
+}
+
+#chanceCard14 {
+    display: none;
+}
+
+#chanceCard15 {
+    display: none;
+}
+
+#chanceCard16 {
+    display: none;
+}
