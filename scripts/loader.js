@@ -4,7 +4,6 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
 <a href="/" class="button">Home</a>
 <a href="/more" class="button">Games</a>
 <a href="/help" class="button">Help</a>
-<a href="https://forums.wcpss.technology" class="button">Forums</a>
 
  <script src="/scripts/image.js"></script>
 <script src="/scripts/name.js"></script>
