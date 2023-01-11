@@ -78,7 +78,7 @@ a {
 }
 
 body {
-  background-color: transparent;
+  background-color: black;
 
 }
 .selector
@@ -147,7 +147,7 @@ html {
   font-family: arial;
   font-size: 100%;
   color: #CCC;
-  background-color: #000000
+  background-color: black;
 }
 
 * {
