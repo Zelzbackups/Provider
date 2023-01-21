@@ -20,6 +20,19 @@ if (location.protocol !== 'https:') {
  <body style="margin: 0 auto;">
 
     <div class="navbar"> </div>
-    <h1>Not Ready Yet!</h1>
+      <script src="/scripts/loader.js"></script>
+    <script src="/scripts/iro.min.js"></script>
+    <div id="picker"></div>
+    <script>
+        var colorPicker = new iro.ColorPicker("#picker", {
+  // Set the size of the color picker
+  width: 320,
+  // Set the initial color to pure red
+  color: "#00"
+});
+    </script>
+    <br>
+    <br>
+    <button class="okay" onclick="document.documentElement.style.backgroundColor = colorPicker.color.hexString; localStorage.setItem('color', colorPicker.color.hexString);">Save Color</button>
   </body>
 </html>

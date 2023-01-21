@@ -11,8 +11,9 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
 <script src="/scripts/name.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-
 `;
+const color = localStorage.getItem('color');
+document.documentElement.style.backgroundColor = color;
 //background-color: #0d47a1;
 
 //do stuff with the script

@@ -78,7 +78,9 @@ a {
 }
 
 body {
-  background-color: black;
+  width = 100%;
+  margin: 0;
+  height = 100%;
 
 }
 .selector
@@ -120,6 +122,20 @@ body {
   margin: 0px 0px;
   cursor: pointer;
   
+}
+.okay {
+  color: black;
+font-family: "Poppins";
+font-weight: 600;
+border: none;
+padding: 0.000000001% 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 0px 0px;
+cursor: pointer;
+
 }
 
 .first-row {position: absolute;top: 0; left: 0; right: 0; height: 100px; }
