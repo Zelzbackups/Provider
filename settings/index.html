@@ -24,15 +24,24 @@ if (location.protocol !== 'https:') {
     <script src="/scripts/iro.min.js"></script>
     <div id="picker"></div>
     <script>
+      var sussy = localStorage.getItem('color')
         var colorPicker = new iro.ColorPicker("#picker", {
   // Set the size of the color picker
   width: 320,
   // Set the initial color to pure red
-  color: "#00"
+  color: sussy
+
 });
+
     </script>
     <br>
     <br>
     <button class="okay" onclick="document.documentElement.style.backgroundColor = colorPicker.color.hexString; localStorage.setItem('color', colorPicker.color.hexString);">Save Color</button>
+    <br>
+    <br>
+    <button class="okay" onclick="localStorage.setItem('textcolor', 'black');">Change text color to black (refresh) </button>
+    <br>
+    <br>
+    <button class="okay" onclick="localStorage.setItem('textcolor', 'white');">Change text color to white (refresh)</button>
   </body>
 </html>

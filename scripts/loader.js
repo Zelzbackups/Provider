@@ -16,6 +16,23 @@ const color = localStorage.getItem('color');
 document.documentElement.style.backgroundColor = color;
 //background-color: #0d47a1;
 
+if (localStorage.getItem("textcolor") === "black") {
+setTimeout(() => {
+  
+
+var elements = document.querySelectorAll("h1, a");
+
+for (var i = 0; i < elements.length; i++) {
+  var element = elements[i];
+
+  var elementColor = window.getComputedStyle(element).getPropertyValue("color");
+
+  if (elementColor === "rgb(255, 255, 255)") {
+    element.style.color = "black";
+  }
+}
+
+}, 2);};
 //do stuff with the script
 $("#tsparticles")
 .particles()
