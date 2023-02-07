@@ -5,7 +5,6 @@ document.getElementsByClassName("navbar")[0].innerHTML += `
 <a href="/more" class="button">Games</a>
 <a href="/help" class="button">Help</a>
 <a href="/shouts" class="button">Shoutouts</a>
-<a href="/qr" class="button">Discord</a>
 <a style="float: right;" href="/settings" class="button">⚙️</a>
  <script src="/scripts/image.js"></script>
 <script src="/scripts/name.js"></script>
