@@ -92,7 +92,7 @@
       var Module = {
         preRun: [ preloadIndexedDB, resizeGameCanvas ],
         postRun: [],
-        arguments: [window.username, Math.random(), location.origin+'/classiserv', '443'],
+        arguments: [window.username, Math.random(), location.host+'/classiserv', '443'],
         print: function(text) {
             if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
             console.log(text);
