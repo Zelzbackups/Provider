@@ -16,25 +16,7 @@
  <br>
  <br>
  <br>
- <script>
 
-function forceHttpsForAllLinks() {
-  const links = document.getElementsByTagName("a");
-
-  for (let i = 0; i < links.length; i++) {
-    const link = links[i];
-    const url = new URL(link.href);
-
-    if (url.protocol === "http:") {
-      url.protocol = "https:";
-      link.href = url.href;
-    }
-  }
-}
-
-// Call the function to update all the links on the page
-forceHttpsForAllLinks();
-</script>
  <script>const color = localStorage.getItem('color');
   document.documentElement.style.backgroundColor = color;</script>
 
@@ -364,7 +346,15 @@ forceHttpsForAllLinks();
   </div>
 </section>
  <br>
-
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var baseElement = document.createElement('base');
+    baseElement.href = window.location.protocol + '//' + window.location.hostname;
+    
+    var headElement = document.getElementsByTagName('head')[0];
+    headElement.insertBefore(baseElement, headElement.firstChild);
+  });
+</script>
   </body>
 
 
