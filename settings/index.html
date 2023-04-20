@@ -16,8 +16,6 @@ if (location.protocol !== 'https:') {
     location.replace(`https:${location.href.substring(location.protocol.length)}`);
 }
   </script>
-  
- <body style="margin: 0 auto;">
 
     <div class="navbar"> </div>
       <script src="/scripts/loader.js"></script>
@@ -37,6 +35,9 @@ if (location.protocol !== 'https:') {
     </script>
     <br>
     <br>
+   
+  <br>
+  <br>
     <button class="okay" onclick="document.documentElement.style.backgroundColor = colorPicker.color.hexString; localStorage.setItem('color', colorPicker.color.hexString);">Save Color</button>
     <br>
     <br>
@@ -44,5 +45,6 @@ if (location.protocol !== 'https:') {
     <br>
     <br>
     <button class="okay" onclick="localStorage.setItem('textcolor', 'white');">Change text color to white (refresh)</button>
+    
   </body>
 </html>
